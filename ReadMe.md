@@ -64,5 +64,6 @@ You should see the robot sensor data miss aligned with the actual map like below
 
 8. Run the planner after setting the start and end point in the code and catkin_make.
 ```
-$ rosrun rrt_star_path_planning_turtlebot rrt_demo map_file:=/location_of_project/maps/point_map
+$ rosparam set rrt_demo/map_file /location_of_project/maps/point_map
+$ rosrun rrt_star_path_planning_turtlebot rrt_demo
 ```
